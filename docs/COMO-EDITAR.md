@@ -60,16 +60,16 @@ DATA = {
 
 ### Onde cada campo aparece no card
 
-| Campo no `DATA` | Onde aparece no card |
-|-----------------|----------------------|
-| `user` / `Github` | Nome grande no topo e nos links |
-| `Subject` | Linha **Subject** (seu nome) |
-| `Role` | Linha **Role** (função) |
-| `Origin` | Linha **Origin** (localização) |
-| `Status`, `Currently`, `ToolChain` | Linhas de status |
-| `Lang`, `Mobile`, `Frontend`, `Backend`, `Database` | Bloco **Core** (skills) |
-| `OpenTo` | Linha **Open · To** |
-| `Mail`, `Portfolio`, `LinkedIn`, `Instagram`, `WhatsApp`, `Github` | Bloco **Contact** |
+| Campo no `DATA`                                                    | Onde aparece no card            |
+| ------------------------------------------------------------------ | ------------------------------- |
+| `user` / `Github`                                                  | Nome grande no topo e nos links |
+| `Subject`                                                          | Linha **Subject** (seu nome)    |
+| `Role`                                                             | Linha **Role** (função)         |
+| `Origin`                                                           | Linha **Origin** (localização)  |
+| `Status`, `Currently`, `ToolChain`                                 | Linhas de status                |
+| `Lang`, `Mobile`, `Frontend`, `Backend`, `Database`                | Bloco **Core** (skills)         |
+| `OpenTo`                                                           | Linha **Open · To**             |
+| `Mail`, `Portfolio`, `LinkedIn`, `Instagram`, `WhatsApp`, `Github` | Bloco **Contact**               |
 
 ### ⚠️ Cuidados ao editar
 
@@ -98,8 +98,8 @@ Troque para a sua data real (formato: `ano, mês, dia`) e rode o script de novo.
 
 O desenho do seu rosto no card é gerado a partir de uma foto:
 
-1. Substitua o arquivo **`assets/me2.png`** pela sua foto (mantenha o mesmo
-   nome, `me2.png`). Uma foto de rosto, com boa luz e fundo simples, funciona melhor.
+1. Substitua o arquivo **`assets/portrait.jpg`** pela sua foto (mantenha o mesmo
+   nome, `portrait.jpg`). Uma foto de rosto, com boa luz e fundo simples, funciona melhor.
 2. Rode `py scripts/build_profile.py` de novo.
 
 Se quiser ajustar o **enquadramento** ou o **tamanho/detalhe** do desenho, mexa nestes
@@ -156,13 +156,13 @@ Em alguns segundos, seu perfil em `github.com/lucasrafaellima` mostra o card nov
 
 ## ❓ Deu algum erro?
 
-| Problema | Solução |
-|----------|---------|
-| `py` não é reconhecido | Use `python scripts/build_profile.py`. Se ainda falhar, instale o Python. |
-| `ModuleNotFoundError: No module named 'PIL'` | Rode `py -m pip install pillow` e tente de novo. |
-| Rodou mas o card não mudou no GitHub | Faça `git push` e atualize a página com **Ctrl+F5**. |
-| Card apareceu em branco no navegador | Normal no preview local — veja direto no seu perfil do GitHub. |
-| Quebrou o `DATA` (erro de sintaxe) | Confira se cada linha termina com `,` e se as aspas `"` estão fechadas. |
+| Problema                                     | Solução                                                                   |
+| -------------------------------------------- | ------------------------------------------------------------------------- |
+| `py` não é reconhecido                       | Use `python scripts/build_profile.py`. Se ainda falhar, instale o Python. |
+| `ModuleNotFoundError: No module named 'PIL'` | Rode `py -m pip install pillow` e tente de novo.                          |
+| Rodou mas o card não mudou no GitHub         | Faça `git push` e atualize a página com **Ctrl+F5**.                      |
+| Card apareceu em branco no navegador         | Normal no preview local — veja direto no seu perfil do GitHub.            |
+| Quebrou o `DATA` (erro de sintaxe)           | Confira se cada linha termina com `,` e se as aspas `"` estão fechadas.   |
 
 ---
 

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-print("TESTE - BUILD_PROFILE EXECUTADO")
 """
 Generate the terminal-style profile card (dark.svg + light.svg) from a photo.
 
@@ -13,7 +12,7 @@ from PIL import Image, ImageOps, ImageEnhance
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "assets", "me2.png")   # source photo
+SRC = os.path.join(ROOT, "assets", "portrait.jpg")   # source photo
 OUT_DIR = ROOT                                        # dark.svg / light.svg land here
 
 # ---- ascii font metrics (must match the .ascii CSS emitted below) ----

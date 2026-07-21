@@ -9,6 +9,7 @@ This is a **GitHub special profile repository** (`lucasrafaellima/lucasrafaellim
 ## The terminal profile card (main artifact)
 
 The centerpiece is a **terminal-style SVG card** (inspired by `Sushmitadasari/Sushmitadasari`): a fake terminal window running `./profile.sh --live`. Four panels:
+
 1. **VISUAL.MAP** — the owner's photo as animated ASCII (centered on visible content so it isn't stuck to the panel's bottom edge).
 2. **SYSTEM.INFO** — identity/skills/contact fields typed line-by-line, ending in a blinking `>` prompt.
 3. **SYSTEM.METRICS** (full-width) — dashboard: CONTRIBUTIONS / IMPACT / NETWORK / LANGUAGES (grow-in bars), plus a CODE TIME line.
@@ -19,13 +20,15 @@ Intro sequence: **CRT power-on** (two shutters retract from a center line + tube
 The overall canvas height is **computed** (`CANVAS_H`) from the metrics panel position, so adding rows/panels resizes the SVG automatically — don't hardcode heights; the viewBox, backgrounds, scan sweep, reveal mask, and border all reference `CANVAS_H`.
 
 Two theme variants are generated:
+
 - `dark.svg` / `light.svg` — selected via `<picture>` `prefers-color-scheme` in `README.md`.
 
 ### Regenerating the card
 
 Both SVGs are **generated, not hand-edited**. Source of truth:
+
 - `scripts/build_profile.py` — the generator (needs Pillow: `py -m pip install pillow`).
-- `assets/me2.png` — the source photo the ASCII portrait is derived from.
+- `assets/portrait.jpg` — the source photo the ASCII portrait is derived from.
 
 To change identity text, skills, contacts, or colors, edit the `DATA` dict / `PALETTES` in `scripts/build_profile.py`, then from the repo root run:
 
