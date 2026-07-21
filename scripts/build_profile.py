@@ -538,7 +538,7 @@ def build_svg(theme, ascii_lines):
     reveal_begin = BOOT_END - 0.25
     boot_lines = [
         ("> booting devOS v4.8", "value"),
-        ("> mounting /home/franklyn/identity", "value"),
+        (f'> mounting /home/{DATA["user"]}/identity', "value"),
         ("> decrypting profile ........ ", "value", "OK", "accent"),
         ("> access granted", "accent"),
     ]

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-This is a **GitHub special profile repository** (`Franklyn-R-Silva/Franklyn-R-Silva`). Because the repo name matches the account name, `README.md` renders on the owner's GitHub profile page. There is no application to build or test — the "product" is the rendered README and the animated SVG it embeds.
+This is a **GitHub special profile repository** (`lucasrafaellima/lucasrafaellima`). Because the repo name matches the account name, `README.md` renders on the owner's GitHub profile page. There is no application to build or test — the "product" is the rendered README and the animated SVG it embeds.
 
 ## The terminal profile card (main artifact)
 
@@ -25,7 +25,7 @@ Two theme variants are generated:
 
 Both SVGs are **generated, not hand-edited**. Source of truth:
 - `scripts/build_profile.py` — the generator (needs Pillow: `py -m pip install pillow`).
-- `assets/portrait.png` — the source photo the ASCII portrait is derived from.
+- `assets/portrait.jpg` — the source photo the ASCII portrait is derived from.
 
 To change identity text, skills, contacts, or colors, edit the `DATA` dict / `PALETTES` in `scripts/build_profile.py`, then from the repo root run:
 
@@ -40,7 +40,7 @@ This overwrites `dark.svg` and `light.svg`. **Do not edit the `.svg` files by ha
 - **ASCII portrait**: `gen_ascii()` crops the photo (`CROP` fractions), boosts contrast, clips dim background below `BLACK_FLOOR` to empty space, then maps brightness to the `RAMP` characters. `COLS` controls detail/size; rows are derived to preserve aspect using the font cell ratio `ADV`×`LH_ASCII`.
 - **Font-metric coupling**: the layout math assumes monospace advance `ADV = FS_ASCII * 0.60`. If you change `FS_ASCII`, keep `LH_ASCII` and this ratio consistent or the portrait distorts vertically.
 - **SYSTEM.INFO alignment** relies on monospace + `white-space: pre`; values align because each line's `key + dots` prefix is padded to `VALUE_COL` characters. The typing effect is per-line clip-paths (`lc0..lcN`) with staggered `begin` times.
-- **Dynamic data**: computed at build time from `datetime.today()` — `DATA["UptimeShort"]` (days since `CODING_SINCE`, shown in the header) and `SYNC` (date). **`CODING_SINCE` is a placeholder — set it to when Franklyn actually started coding.** These change daily, which is what the `refresh-card` CI job commits.
+- **Dynamic data**: computed at build time from `datetime.today()` — `DATA["UptimeShort"]` (days since `CODING_SINCE`, shown in the header) and `SYNC` (date). **`CODING_SINCE` is a placeholder — set it to when Lucas actually started coding.** These change daily, which is what the `refresh-card` CI job commits.
 - **Auto-fetched metrics (all at build time, all `None`-safe so the build never breaks offline)**:
   - `fetch_streak()` — scrapes total/current/longest streak from the `github-readme-streak-stats` SVG.
   - `fetch_github()` — REST API: stars/forks/PRs/issues/followers/repos, top repos, last-push, account age, and top languages by code **bytes**. Honors `GH_PAT` (classic, scope `repo`) to include **private** repos; else `GITHUB_TOKEN` (public, higher limit) or unauthenticated. Per-repo language calls are capped to the 80 most-recently-pushed repos so PAT builds stay fast.
@@ -62,4 +62,4 @@ The same workflow has a second job, **`refresh-card`**, which reinstalls Pillow,
 ## README notes
 
 - The README relies on external image services (`shields.io`, `github-readme-stats`, `github-readme-streak-stats`, `capsule-render`). Changes are visual — verify by previewing rendered Markdown.
-- Any `user=`/`username=` param in the stat/snake URLs must stay as `Franklyn-R-Silva`.
+- Any `user=`/`username=` param in the stat/snake URLs must stay as `lucasrafaellima`.
