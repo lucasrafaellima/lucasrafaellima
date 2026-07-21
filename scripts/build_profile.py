@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+print("TESTE - BUILD_PROFILE EXECUTADO")
 """
 Generate the terminal-style profile card (dark.svg + light.svg) from a photo.
 
