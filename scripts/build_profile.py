@@ -26,9 +26,9 @@ BLACK_FLOOR = 48               # pixels darker than this render as empty backgro
 
 # ---- identity data -----------------------------------------------------
 DATA = {
-    "user":  "franklyn@dev",
-    "Subject":  "Franklyn Roberto",
-    "Role":     "Mobile Developer · Flutter/Dart",
+    "user":  "lucasrafaellima",
+    "Subject":  "Lucas Rafael",
+    "Role":     "Full Stack · Angular/Java",
     "Origin":   "Arapiraca - AL, Brazil",
     "Status":   "Building • Learning • Shipping",
     "Currently":"Flutter apps · Studying iOS/Kotlin",
@@ -39,12 +39,12 @@ DATA = {
     "Frontend": "React, TypeScript, Tailwind, Astro",
     "Backend":  "Node.js, Spring, Electron",
     "Database": "PostgreSQL, MySQL, Oracle",
-    "Mail":     "franklyn.dev.mobile@gmail.com",
-    "Portfolio":"devfrs.com",
-    "LinkedIn": "franklyn-r-silva",
-    "Instagram":"@franklynrsilva",
-    "WhatsApp": "+55 82 99991-5558",
-    "Github":   "Franklyn-R-Silva",
+    "Mail":     "lucasrafaellima03@gmail.com",
+    "Portfolio":"",
+    "LinkedIn": "",
+    "Instagram":"@lucasrafaellimaaa",
+    "WhatsApp": "",
+    "Github":   "lucasrafaellima",
 }
 
 # ---- dynamic data (recomputed on every build / daily via GitHub Actions) ----
