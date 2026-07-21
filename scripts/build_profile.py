@@ -20,7 +20,7 @@ FS_ASCII = 6.2
 LH_ASCII = 6.2
 ADV = FS_ASCII * 0.60          # monospace advance per char
 COLS = 108                     # portrait width in characters (bigger = more detail)
-CROP = (0.15, 0.12, 0.85, 0.67)  # cx0, cy0, cx1, cy1 as fractions of the photo
+CROP = (0.15, 0.12, 0.85, 0.87)  # cx0, cy0, cx1, cy1 as fractions of the photo
 RAMP = " ..'':-~=++**cvxzsoaekw%8B#@@"   # dark -> light density ramp
 BLACK_FLOOR = 48               # pixels darker than this render as empty background
 
