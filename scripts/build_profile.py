@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+print("test")
 """
 Generate the terminal-style profile card (dark.svg + light.svg) from a photo.
 
