@@ -25,7 +25,7 @@ Two theme variants are generated:
 
 Both SVGs are **generated, not hand-edited**. Source of truth:
 - `scripts/build_profile.py` — the generator (needs Pillow: `py -m pip install pillow`).
-- `assets/portrait.jpg` — the source photo the ASCII portrait is derived from.
+- `assets/me2.png` — the source photo the ASCII portrait is derived from.
 
 To change identity text, skills, contacts, or colors, edit the `DATA` dict / `PALETTES` in `scripts/build_profile.py`, then from the repo root run:
 

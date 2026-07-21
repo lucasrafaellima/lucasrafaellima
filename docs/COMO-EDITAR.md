@@ -98,8 +98,8 @@ Troque para a sua data real (formato: `ano, mês, dia`) e rode o script de novo.
 
 O desenho do seu rosto no card é gerado a partir de uma foto:
 
-1. Substitua o arquivo **`assets/portrait.jpg`** pela sua foto (mantenha o mesmo
-   nome, `portrait.jpg`). Uma foto de rosto, com boa luz e fundo simples, funciona melhor.
+1. Substitua o arquivo **`assets/me2.png`** pela sua foto (mantenha o mesmo
+   nome, `me2.png`). Uma foto de rosto, com boa luz e fundo simples, funciona melhor.
 2. Rode `py scripts/build_profile.py` de novo.
 
 Se quiser ajustar o **enquadramento** ou o **tamanho/detalhe** do desenho, mexa nestes
