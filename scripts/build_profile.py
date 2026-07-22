@@ -32,7 +32,7 @@ DATA = {
     "Role":     "Full Stack · Angular/Java",
     "Origin":   "Arapiraca - AL, Brazil",
     "Status":   "Building • Learning • Shipping",
-    "Currently":"Flutter apps · Studying iOS/Kotlin",
+    "Currently":"Angular · Studying Web/TypeScript",
     "ToolChain":"VS Code, Git, Docker, Postman, Figma",
     "OpenTo":   "Freelance · Full-time · Collabs",
     "Lang":     "Java, Python, C#, C, TypeScript",
